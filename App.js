@@ -26,13 +26,13 @@ function UdaciStatusBar({ backgroundColor, ...props }) {
 
 
 const TabNavigator = createBottomTabNavigator({
-  // History: {
-  //   screen: History,
-  //   navigationOptions: {
-  //     tabBarLabel: 'History',
-  //     tabBarIcon: ({ tintColor }) => <Ionicons name='ios-bookmarks' size={30} color={tintColor} />
-  //   },
-  // },
+  History: {
+    screen: History,
+    navigationOptions: {
+      tabBarLabel: 'History',
+      tabBarIcon: ({ tintColor }) => <Ionicons name='ios-bookmarks' size={30} color={tintColor} />
+    },
+  },
     AddEntry: {
       screen: AddEntry,
       navigationOptions: {
