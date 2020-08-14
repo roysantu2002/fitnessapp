@@ -10,7 +10,8 @@ import {removeEntry, submitEntry} from "../utils/api";
 import {connect} from 'react-redux';
 import {addEntry} from "../actions";
 import {purple, white} from "../utils/colors";
-// import {CommonActions} from '@react-navigation/native';
+
+import { CommonActions } from 'react-navigation';
 
 function SubmitBtn({onPress}) {
     return (
@@ -98,13 +99,12 @@ class AddEntry extends Component {
         removeEntry(key);
     }
 
-
-    // toHome = () => {
-    //     this.props.navigation.dispatch(
-    //         CommonActions.goBack({
-    //             key: 'AddEntry',
-    //         }))
-    // }
+    toHome = () => {
+        this.props.navigation.dispatch(
+            CommonActions.goBack({
+                key: 'AddEntry',
+            }))
+    }
 
     render() {
 
