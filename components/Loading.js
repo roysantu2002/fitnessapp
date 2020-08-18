@@ -12,7 +12,7 @@ import {Actions} from 'react-native-router-flux';
 import Logo from '../images/Flash.png'
 
 const switchToAuth = () => {
-  Actions.replace('AddEntry')
+  Actions.replace('nav')
 };
 
 class LoadingScene extends Component {

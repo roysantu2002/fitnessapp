@@ -18,7 +18,7 @@ import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Constants } from "expo";
 import EntryDetail from "./components/EntryDetail";
 import Live from "./components/Live";
-// import { setLocalNotification } from './utils/helpers'
+import FlashCardsNav from './navigation/FlashCardsNav'
 
 export default class App extends React.Component {
  
@@ -28,7 +28,7 @@ export default class App extends React.Component {
       <Router>
       <Scene key="root">
         <Scene key="loading" component={Loading} initial={true} hideNavBar={true}></Scene>
-        <Scene key="AddEntry" component={Welcome} hideNavBar={true}></Scene>
+        <Scene key="nav" component={FlashCardsNav} hideNavBar={true}></Scene>
       </Scene>
     </Router>
     );
